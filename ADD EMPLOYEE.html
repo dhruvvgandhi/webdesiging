@@ -1,0 +1,208 @@
+
+<html>
+    <head>
+<script language="javascript">
+function validateForm() {
+    var username = document.myForm.username.value;
+    var password = document.forms["myForm"]["password"].value;
+	
+	if (username == "") {
+        alert("Username must be filled out");
+    }
+    if(password == "")
+	{
+	   alert("Password must be filled out");
+	}
+}
+function validateRegform()
+{
+  var first = document.forms["myForm"]["first"].value;
+  var last = document.forms["myForm"]["last"].value;
+  if(first == "")
+  {
+    alert("Please enter value for the First Name");
+	document.myForm.first.focus() ;
+    }
+   if(last == "")
+	{
+	alert("Please enter value for the last name");
+	document.myForm.last.focus() ;
+	}
+  
+  var email = document.myForm.email.value;
+  
+  //sh@gmail.com
+  atpos = email.indexOf("@");
+  dotpos = email.lastIndexOf(".");
+  
+  if(atpos < 1 || (dotpos - atpos < 2))
+        {
+            alert("Please enter correct email ID")
+            document.myForm.email.focus() ;
+           
+         }
+   
+  var no = document.myForm.mobile.value;
+  if(isNaN(no))
+  {
+     alert("Please enter numerics only");
+  	 }
+}
+
+</script>
+      <link href="style.css" rel="stylesheet" type="text/css">  
+        
+<style>
+    #particles-js
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img3.jfif);
+    height: 150vh;
+    background-size: cover;
+    background-position: center;
+}
+
+body {
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100%;
+	width:100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.div {
+    opacity: 0.7;
+    filter: Alpha(opacity=50);
+	font-weight:bold;
+}
+</style>
+</head>
+<body>
+ <div id="particles-js">
+        <div class="main">
+
+<ul>
+  <li><a class="active" href="FIRST PAGE.html">Home</a></li>
+  <li><a href="ADD EMPLOYEE.html">ADD EMPLOYEE</a></li>
+  <li><a href="ADMIN TOLL PLAZA DETAILS.html">TOLL PLAZA DETAILS</a></li>
+  <li><a href="ADMIN USER RESOURCES.html">USER RESOURCES</a></li>
+  <li><a href="ADMIN POLICIY.html">POLICIY</a></li>
+  <li><a href="ADMIN FAQS.html">FAQS</a></li>
+  <li><a href="ADMIN ABOUT US.html">ABOUT US</a></li>
+  <li><a href="ADMIN CONTACT US.html">CONTACT US </a></li>
+  <li style="float:right"><a class="active" >ENERGENCY CONTACT :- 108 </a></li>
+</ul>
+
+<img src="N2.png" alt="N2" height="85" width="300">							<img src="N3.png" alt="N3.png" height="85" width="300"><tr>  	 							<img src="N4.png" alt="N2" height="85" width="300"></tr><br>
+<Br><Br>
+<center>
+<form name="myForm" method="post">
+
+  <fieldset class="div">
+    <legend>Registration Form</legend>
+	<p><br>	
+    First Name:
+      <input type="text" name="first" value="First Name">
+      <br>
+      <br>
+    Last Name :
+    <input type="text" name="last" value="Last Name">
+    <br>
+    <br>
+	Gender :
+	<input type="radio" name="gender" value="male"> 
+	Male
+    <input type="radio" name="gender" value="female"> 
+    Female
+	<br>
+	<br>
+	AGE :
+	<input type="text" name="last" value="Enter Age of Employee">
+	<br>
+	<br>
+	Height :
+    <input type="text" name="last" value="Enter Your Height in inch">
+    <br>
+    <br>
+  	Weight :
+    <input type="text" name="last" value="Enter Your Weight in KG">
+    <br>
+    <br>
+  	Blood Group :
+    <input type="text" name="last" value="Blood Group">
+    <br>
+    <br>
+	Mobile number :
+	<input type="text" name="mobile" maxlength="10" value="Enter Your Mobile Number ">
+	<br>
+    <br>
+	Email Address :
+    <input type="text" name="email" value="Enter Your Ppsu Email Id">
+    <br>
+	<br>
+  	Nation:
+	<input type="text" name="first" value="Nation">
+	<br>
+  <br>
+	State:
+	  <input type="text" name="first" value="state">
+    <br>
+	<br>
+	City :
+	 <input type="text" name="first" value="City">
+    <br>
+	<br>
+  	Address:
+   	  <span class="div1">
+   	<textarea name="message" style="width:200px; height:200px;">Enter Address</textarea>
+   	  </span><br>
+   	  <br>
+	
+	
+      <br>
+      <br>
+	
+	
+	
+      <input type="button" value="Submit" onClick="validateRegform()">
+	  <input type="submit" value="Send Email">
+	  <input type="reset" value="Reset">
+  </p>
+  </fieldset>
+
+    </form></center>
+    <script src="particles.js"></script>
+    <script src="app.js"></script></Br></Br>
+    </div>
+        
+    </div>
+
+</body>
+</html>

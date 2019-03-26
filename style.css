@@ -1,0 +1,212 @@
+/* CSS Document */
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+#particles-js
+{
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)), url(img3.jfif);
+    height: 300vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.title
+{
+    margin-left: 100px;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+
+.main
+{
+	margin-left: 5%;
+	position: absolute;
+	color: #fff;
+	font-family: sans-serif;
+	left: -2px;
+	top: 1px;
+	width: 1191px;
+}
+
+.main h1
+{
+    margin-top: 220px;
+    letter-spacing: 2px;
+    font-size: 42px;
+    text-transform: uppercase;
+}
+
+
+.main-nav
+{
+    float: right;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.main-nav li
+{
+    display: inline-block;
+}
+
+.main-nav li a
+{
+    color: white;
+    text-decoration: none;
+    padding: 5px 20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+}
+
+.main-nav li.active a
+{
+    border: 1px solid white;
+}
+
+.main-nav li a:hover
+{
+    border: 1px solid white;
+}
+
+.logo img 
+{
+    float: left;
+    margin-left: 5px;
+    margin-top: 10px;
+
+}
+
+.dropbtn {
+   
+    color:#000000;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor:pointer;
+    border: 0px;
+}
+
+.dropdown{
+    
+    display: inline-block;
+	position:relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:darkturquoise;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover
+{
+    background-color:darkcyan;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    border: 0px;
+}
+
+.slider
+{
+    margin-left: 50px;
+}
+
+.contact-title
+{
+    color: #fff;
+    text-transform: uppercase;
+    transition: all 4s ease-in-out;
+}
+
+
+.contact-title h2{
+    font-size: 16px;
+}
+
+.form
+{
+    margin-left: 50px;
+    transition: all 4s ease-in-out;
+}
+
+.form-control
+{
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 16px;
+}
+
+input
+{
+    height: 45px;
+    
+}
+
+form .submit
+{
+    background: #ff5722;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height:50px;
+    margin-top: 20px;
+}
+
+form .submit:hover
+{
+    background-color: #FF0000;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
